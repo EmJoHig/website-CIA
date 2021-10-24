@@ -1,0 +1,9 @@
+.portfolio .portfolio-item {
+    background: #ffffff;
+    text-align: center;
+  }
+
+  .portfolio .portfolio-item h2{
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
