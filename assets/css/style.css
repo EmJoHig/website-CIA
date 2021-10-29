@@ -157,7 +157,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   padding: 10px 20px;
   font-size: 14px;
   text-transform: none;
-  color: #1c3745;
+  color: rgba(64, 22, 218, 0.404);
 }
 .navbar .dropdown ul a i {
   font-size: 12px;
@@ -218,7 +218,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(17, 38, 48, 0.9);
+  background: rgba(64, 22, 218, 0.404);
   transition: 0.3s;
 }
 .navbar-mobile .mobile-nav-toggle {
@@ -241,7 +241,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 .navbar-mobile a, .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #1e4356;
+  color: rgba(64, 22, 218, 0.404);
 }
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
   color: #68A4C4;
