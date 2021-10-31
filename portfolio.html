@@ -219,6 +219,30 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <script src="https://getchat.app/assets/js/min/getchatapp.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var gcaMain = new GetChatApp({
+        'mobileNumber' : '+54 221 5937093',
+        'titleMessage' : '👋 Chat WhatsApp!',
+        'welcomeMessage': 'Hola!<br /> <br /> Comunicate directamente a nuestro WhatsApp!<br /> ',
+        'position' : 'right',
+        'platforms' : {
+            'whatsapp' : true,
+            'facebook' : false,
+            'email' : false,
+            'instagram' : false,
+            'telegram' : false,
+        },
+        'facebookPageId' : '',
+        'gcaEmailAddress' : '',
+        'gcaEmailSubject' : '',
+        'gcaInstagramUsername' : '',
+        'gcaTelegramUsername' : '',
+      });
+    });
+  </script>
+
 </body>
 
 </html>
