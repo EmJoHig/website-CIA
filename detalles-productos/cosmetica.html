@@ -33,27 +33,28 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center ">
-    <div class="container d-flex justify-content-between align-items-center">
-
-      <div class="logo">
-        <h1 class="text-light"><a href="../index.html"><span>CIA USHUAIA</span></a></h1>
-        
-      </div>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="" href="../index.html">Inicio</a></li>
-          <li><a href="../about.html">Sobre Nosotros</a></li>
-          <li><a href="../services.html">Nuestros Servicios</a></li>
-          <li><a class="active" href="../portfolio.html">Productos</a></li>
-          <li><a href="../contact.html">Contacto</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-    </div>
-  </header><!-- End Header -->
+  <header>
+    <nav>
+      <section class="contenedor nav">
+          <div class="logo">
+              <img src="../assets/img/LOGOTIPOGOD.png" alt="">
+          </div>
+          <span>
+              Centro Integral del Automotor
+          </span>
+          <div class="enlaces-header">
+            <a class="active " href="../index.html">Inicio</a>
+            <a href="../about.html">Sobre Nosotros</a>
+            <a href="../services.html">Servicios</a>
+            <a href="../portfolio.html">Productos</a>
+            <a href="../contact.html">Contacto</a>
+          </div>
+          <div class="hamburguer">
+              <i class="bi bi-list mobile-nav-toggle"></i>
+          </div>
+      </section>
+    </nav>
+  </header>
 
   <main id="main">
 
@@ -191,6 +192,30 @@
 
   <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
+
+  <script src="https://getchat.app/assets/js/min/getchatapp.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var gcaMain = new GetChatApp({
+        'mobileNumber' : '+54 221 5937093',
+        'titleMessage' : '👋 Chat WhatsApp!',
+        'welcomeMessage': 'Hola!<br /> <br /> Comunicate directamente a nuestro WhatsApp!<br /> ',
+        'position' : 'right',
+        'platforms' : {
+            'whatsapp' : true,
+            'facebook' : false,
+            'email' : false,
+            'instagram' : false,
+            'telegram' : false,
+        },
+        'facebookPageId' : '',
+        'gcaEmailAddress' : '',
+        'gcaEmailSubject' : '',
+        'gcaInstagramUsername' : '',
+        'gcaTelegramUsername' : '',
+      });
+    });
+  </script>
 
 </body>
 

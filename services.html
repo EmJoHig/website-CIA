@@ -27,35 +27,38 @@
 
 <body>
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center ">
-    <div class="container d-flex justify-content-between align-items-center">
-      <div class="logo">
-        <h1 class="text-light"><a href="index.html"><span>CIA USHUAIA</span></a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-      </div>
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="about.html">Sobre Nosotros</a></li>
-          <li><a class="active" href="services.html">Nuestros Servicios</a></li>
-          <li><a href="portfolio.html">Productos</a></li>
-          <li><a href="contact.html">Contacto</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-    </div>
-  </header><!-- End Header -->
+  <header>
+    <nav>
+      <section class="contenedor nav">
+          <div class="logo">
+              <img src="assets/img/LOGOTIPOGOD.png" alt="">
+          </div>
+          <span>
+              Centro Integral del Automotor
+          </span>
+          <div class="enlaces-header">
+            <a class="active " href="index.html">Inicio</a>
+            <a href="about.html">Sobre Nosotros</a>
+            <a href="services.html">Servicios</a>
+            <a href="portfolio.html">Productos</a>
+            <a href="contact.html">Contacto</a>
+          </div>
+          <div class="hamburguer">
+              <i class="bi bi-list mobile-nav-toggle"></i>
+          </div>
+      </section>
+    </nav>
+  </header>
 
   <main id="main">
     <!-- ======= Our Services Section ======= -->
     <section class="breadcrumbs">
       <div class="container">
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Nuestros Servicios</h2>
+          <h2>Servicios</h2>
           <ol>
             <li><a href="index.html">Inicio</a></li>
-            <li>Nuestros Servicios</li>
+            <li>Servicios</li>
           </ol>
         </div>
       </div>
@@ -105,15 +108,71 @@
         <div class="row">
           <div class="col-lg-12">
             <ul id="portfolio-flters">
-              <li id="idFilterAppServices" data-filter=".filter-servicio1" class="filter-active">SERVICIO 1</li>
-              <li data-filter=".filter-servicio2">SERVICIO 2</li>
-              <li data-filter=".filter-servicio3">SERVICIO 3</li>
-              <li data-filter=".filter-servicio4">SERVCIO 4</li>
-              <li data-filter=".filter-servicio5">SERVCIO 5</li>
-              <li data-filter=".filter-servicio6">SERVCIO 6</li>
-              <li data-filter=".filter-servicio7">SERVCIO 7</li>
-              <li data-filter=".filter-servicio8">SERVCIO 8</li>
-              <li data-filter=".filter-servicio9">SERVCIO 9</li>
+
+              <li id="idFilterAppServices" data-filter=".filter-servicio1" class="filter-active" data-toggle="tooltip" data-placement="bottom" title="ALINEACIÓN">
+                <div class="icon">
+                  <!-- <i class="iconify" data-icon="icon-park-outline:tire-swing"></i> -->
+                  <img src="assets//img/alineacionICON.png" alt="">
+                </div>
+                <small>Alineacion</small>
+              </li>
+
+              <li data-filter=".filter-servicio2" data-toggle="tooltip" data-placement="bottom" title="DIAGNÓSTICO COMPUTARIZADO">
+                <div class="icon">
+                  <img src="assets//img/computerICON.png" alt="">
+                </div>
+                <small>Diag. Computarizado</small>
+              </li>
+
+              <li data-filter=".filter-servicio3" data-toggle="tooltip" data-placement="bottom" title="FRENOS">
+                <div class="icon">
+                  <img src="assets//img/frenoICON.png" alt="">
+                </div>
+                <small>Frenos</small>
+              </li>
+
+              <li data-filter=".filter-servicio4" data-toggle="tooltip" data-placement="bottom" title="GOMERÍA">
+                <div class="icon">
+                  <img src="assets//img/tiredICON.png" alt="">
+                </div>
+                <small>Gomería</small>
+              </li>
+
+              <li data-filter=".filter-servicio5" data-toggle="tooltip" data-placement="bottom" title="KIT DE DISTRIBUCIÓN">
+                <div class="icon">
+                  <img src="assets//img/kitICON.png" alt="">
+                </div>
+                <small>Kit Distribución</small>
+              </li>
+
+              <li data-filter=".filter-servicio6" data-toggle="tooltip" data-placement="bottom" title="MECÁNICA LIGERA" >
+                <div class="icon">
+                  <img src="assets//img/mecaincaICON.png" alt="">
+                </div>
+                <small>Mecánica Ligera</small>
+              </li>
+
+              <li data-filter=".filter-servicio7" data-toggle="tooltip" data-placement="bottom" title="SERVICE">
+                <div class="icon">
+                  <img src="assets//img/serviceICON.png" alt="">
+                </div>
+                <small>Service</small>
+              </li>
+
+              <li data-filter=".filter-servicio8" data-toggle="tooltip" data-placement="bottom" title="SUSPENCIÓN">
+                <div class="icon">
+                  <img src="assets//img/suspensionICON.png" alt="">
+                </div>
+                <small>Suspención</small>
+              </li>
+
+              <li data-filter=".filter-servicio9" data-toggle="tooltip" data-placement="bottom" title="TREN DELANTERO Y TRASERO">
+                <div class="icon">
+                  <img src="assets//img/trendytICON.png" alt="">
+                </div>
+                <small>Tren Del. y Trasero</small>
+              </li>
+
             </ul>
           </div>
         </div>
@@ -576,11 +635,36 @@
   <script src="assets/vendor/purecounter/purecounter.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
   <script> window.addEventListener('load', () => {document.getElementById("idFilterAppServices").click();});</script>
+
+  <script src="https://getchat.app/assets/js/min/getchatapp.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var gcaMain = new GetChatApp({
+        'mobileNumber' : '+54 221 5937093',
+        'titleMessage' : '👋 Chat WhatsApp!',
+        'welcomeMessage': 'Hola!<br /> <br /> Comunicate directamente a nuestro WhatsApp!<br /> ',
+        'position' : 'right',
+        'platforms' : {
+            'whatsapp' : true,
+            'facebook' : false,
+            'email' : false,
+            'instagram' : false,
+            'telegram' : false,
+        },
+        'facebookPageId' : '',
+        'gcaEmailAddress' : '',
+        'gcaEmailSubject' : '',
+        'gcaInstagramUsername' : '',
+        'gcaTelegramUsername' : '',
+      });
+    });
+  </script>
 
 </body>
 

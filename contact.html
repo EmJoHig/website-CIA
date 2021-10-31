@@ -33,28 +33,28 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center ">
-    <div class="container d-flex justify-content-between align-items-center">
-
-      <div class="logo">
-        <h1 class="text-light"><a href="index.html"><span>CIA USHUAIA</span></a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-      </div>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="" href="index.html">Inicio</a></li>
-          <li><a href="about.html">Sobre Nosotros</a></li>
-          <li><a href="services.html">Nuestros Servicios</a></li>
-          <li><a href="portfolio.html">Productos</a></li>
-          <li><a class="active" href="contact.html">Contacto</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-    </div>
-  </header><!-- End Header -->
+  <header>
+    <nav>
+      <section class="contenedor nav">
+          <div class="logo">
+              <img src="assets/img/LOGOTIPOGOD.png" alt="">
+          </div>
+          <span>
+              Centro Integral del Automotor
+          </span>
+          <div class="enlaces-header">
+            <a class="active " href="index.html">Inicio</a>
+            <a href="about.html">Sobre Nosotros</a>
+            <a href="services.html">Servicios</a>
+            <a href="portfolio.html">Productos</a>
+            <a href="contact.html">Contacto</a>
+          </div>
+          <div class="hamburguer">
+              <i class="bi bi-list mobile-nav-toggle"></i>
+          </div>
+      </section>
+    </nav>
+  </header>
 
   <main id="main">
 
@@ -63,7 +63,7 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Contacto</h2>
+          <h2>Contacto</h2> 
           <ol>
             <li><a href="index.html">Inicio</a></li>
             <li>Contacto</li>
@@ -94,14 +94,14 @@
                 <div class="info-box">
                   <i class="bx bx-envelope"></i>
                   <h3>Email</h3>
-                  <p style="font-size:75%;">centrointegraldelautomotor.cia@gmail.com</p> <br>
+                  <p style="font-size:75%;">centrointegraldelautomotor.cia@gmail.com</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info-box">
                   <i class="bx bx-phone-call"></i>
-                  <h3>Teléfonos</h3>
-                  <p>(+54) 2901-408256<br>(+54) 2901-440354</p>
+                  <h3>Teléfono</h3>
+                  <p>(+54) 2901-440354<br></p>
                 </div>
               </div>
             </div>
@@ -112,24 +112,24 @@
             <form action="" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" required>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
                 </div>
               </div>
               <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
               </div>
               <div class="my-3">
-                <div class="loading">Loading</div>
+                <div class="loading">Cargando</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Su mensaje ha sido enviado, Gracias!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button type="submit">Enviar</button></div>
             </form>
           </div>
 
@@ -216,6 +216,30 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script src="https://getchat.app/assets/js/min/getchatapp.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var gcaMain = new GetChatApp({
+        'mobileNumber' : '+54 221 5937093',
+        'titleMessage' : '👋 Chat WhatsApp!',
+        'welcomeMessage': 'Hola!<br /> <br /> Comunicate directamente a nuestro WhatsApp!<br /> ',
+        'position' : 'right',
+        'platforms' : {
+            'whatsapp' : true,
+            'facebook' : false,
+            'email' : false,
+            'instagram' : false,
+            'telegram' : false,
+        },
+        'facebookPageId' : '',
+        'gcaEmailAddress' : '',
+        'gcaEmailSubject' : '',
+        'gcaInstagramUsername' : '',
+        'gcaTelegramUsername' : '',
+      });
+    });
+  </script>
 
 </body>
 
